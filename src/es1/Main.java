@@ -28,9 +28,9 @@ public class Main {
     }
 
     public static boolean leapYear(int num) {
-        if (num % 4 == 0) {
+        if (num % 400 == 0) {
             return true;
-        } else if (num % 100 == 0 && num % 400 == 0) {
+        } else if (num % 100 == 0 || num % 4 == 0) {
             return true;
         } else {
             return false;
